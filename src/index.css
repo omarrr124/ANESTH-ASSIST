@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --cream: #fff8f0;
+    --cream-100: #f3ece2;
+    --cream-200: #eee4d7;
+    --cream-300: #e8dbc9;
+    --forest: #3e546d;
+    --forest-dark: #243344;
+    --charcoal: #1f1f1f;
+  }
+
+  html, body {
+    @apply bg-cream-50 text-charcoal-800;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Serif Display', Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .bg-cream-50  { background-color: #fff8f0; }
+  .bg-cream-100 { background-color: #f3ece2; }
+  .bg-cream-200 { background-color: #eee4d7; }
+  .bg-cream-300 { background-color: #e8dbc9; }
+  .text-forest  { color: #3e546d; }
+  .bg-forest    { background-color: #3e546d; }
+  .border-forest { border-color: #3e546d; }
+  .border-cream-300 { border-color: #e8dbc9; }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile-friendly tap targets */
+a, button {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+nav a, nav button { min-height: unset; }

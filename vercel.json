@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/dosebloc_v9.html", "destination": "/dosebloc_v9.html" },
+    { "source": "/assets/(.*)", "destination": "/assets/$1" },
+    { "source": "/images/(.*)", "destination": "/images/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
